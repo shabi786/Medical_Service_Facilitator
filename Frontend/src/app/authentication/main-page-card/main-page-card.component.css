@@ -1,0 +1,30 @@
+.main-card {
+  display: inline-block;
+  height: 50vh;
+  width: 100%;
+  margin-top: 3%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  /*mobile*/
+  .main-card {
+    height: 25vh;
+  }
+  h2 {
+    font-size: 110%;
+  }
+
+}
+@media only screen and (min-width: 768px) {
+  .main-card {
+    filter: grayscale(70%);
+  }
+  .main-card:hover {
+    height: 55vh;
+    margin-top: 0;
+    filter: grayscale(0);
+  }
+}

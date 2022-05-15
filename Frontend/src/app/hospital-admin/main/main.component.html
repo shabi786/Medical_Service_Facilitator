@@ -1,0 +1,30 @@
+<div *ngIf="!user.approved">
+  <h3 class="pt-5">
+    {{ user.email }} is not approved.<br />Contact your hospital admin to
+    approve you and re-login.
+  </h3>
+</div>
+<div *ngIf="user.approved">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="card p-0">
+        <div class="content">
+          <h2 class="content-title">Approve Doctors</h2>
+          <p class="text-muted">
+            Approve doctors who have signed up for this hospital
+          </p>
+          <a class="btn btn-success" routerLink="approve">Open</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="card p-0">
+        <div class="content">
+          <h2 class="content-title">Close Appointment</h2>
+          <p class="text-muted">Close appointments of treated patients</p>
+          <a class="btn btn-success" routerLink="close">Open</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

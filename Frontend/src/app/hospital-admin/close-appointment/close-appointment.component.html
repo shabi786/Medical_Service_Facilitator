@@ -1,0 +1,9 @@
+<div *ngIf="appointments.length">
+  <div *ngFor="let appointment of appointments">
+    <app-appointment-card
+      [appointment]="appointment"
+      [forceCancel]="true"
+      (deleted)="getAppointments()"
+    ></app-appointment-card>
+  </div>
+</div>

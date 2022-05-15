@@ -1,0 +1,80 @@
+<div *ngIf="!user.approved">
+  <h3 class="pt-5">
+    {{ user.email }} is not approved.<br />Contact your hospital admin to
+    approve you and re-login.
+  </h3>
+</div>
+
+<div *ngIf="user.approved">
+  <div>
+    <div class="card">
+      <div class="px-card py-10 border-bottom">
+        <h2 class="card-title font-size-18 m-0">Unapproved Super Admins</h2>
+      </div>
+      <div class="content">
+        <ol>
+          <li *ngFor="let superAdmin of unapprovedSuperAdmins">
+            {{ superAdmin.email }}
+            <button
+              class="btn btn-success btn-sm mr-2"
+              (click)="approveHospitalAdmin(superAdmin.email)"
+            >
+              Approve
+            </button>
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="deleteHospitalAdmin(superAdmin.email)"
+            >
+              Reject
+            </button>
+          </li>
+        </ol>
+      </div>
+      <div class="px-card py-10 bg-light-lm bg-very-dark-dm rounded-bottom">
+        <hr />
+        <p class="font-size-12 m-0">
+          <button class="btn btn-primary" (click)="getUnapprovedSuperAdmins()">
+            Refresh
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="card">
+      <div class="px-card py-10 border-bottom">
+        <h2 class="card-title font-size-18 m-0">Unapproved Hospital Admins</h2>
+      </div>
+      <div class="content">
+        <ol>
+          <li *ngFor="let hadmin of unapprovedHospitalAdmins">
+            {{ hadmin.name }} - {{ hadmin.email }}
+            <button
+              class="btn btn-success btn-sm mr-2"
+              (click)="approveHospitalAdmin(hadmin.email)"
+            >
+              Approve
+            </button>
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="deleteHospitalAdmin(hadmin.email)"
+            >
+              Reject
+            </button>
+          </li>
+        </ol>
+      </div>
+      <div class="px-card py-10 bg-light-lm bg-very-dark-dm rounded-bottom">
+        <hr />
+        <p class="font-size-12 m-0">
+          <button
+            class="btn btn-primary"
+            (click)="getUnapprovedHospitalAdmins()"
+          >
+            Refresh
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<form class="p-mt-3" (submit)="onSubmit($event)">
+  <div class="p-fluid">
+    <div class="p-float-label">
+      <input
+        type="email"
+        pInputText
+        name="email"
+        id="email"
+        required
+        [(ngModel)]="email"
+      />
+      <label for="email">Email</label>
+    </div>
+    <div class="p-float-label p-my-4">
+      <input
+        type="password"
+        pInputText
+        name="Password"
+        id="password"
+        required
+        [(ngModel)]="password"
+      />
+      <label for="password">Password</label>
+    </div>
+  </div>
+  <button
+    type="submit"
+    label="Signup"
+    [disabled]="!email || !password"
+    pButton
+  ></button>
+</form>

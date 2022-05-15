@@ -1,0 +1,58 @@
+<div class="p-grid p-mt-5 p-ml-2">
+  <div class="p-col-12 p-lg-8 p-shadow-5">
+    <div class="p-grid p-pt-6">
+      <div class="p-col-12 p-lg-5">
+        <div class="p-d-inline-flex p-align-center">
+          <img [src]="getSvg()" class="svg" />
+        </div>
+      </div>
+      <div class="p-col-12 p-lg-7 p-text-center">
+        <div class="p-d-flex p-jc-center p-ac-center p-flex-column">
+          <h1>{{ getTitle() }}</h1>
+          <div class="p-px-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+            accusantium asperiores dolor doloremque eaque eos ex molestiae nemo
+            numquam optio porro praesentium quam quis reprehenderit rerum sequi
+            unde, velit voluptatibus.
+          </div>
+        </div>
+        <a [routerLink]="getLink()" class="router-link">
+          <button pButton class="p-mt-5" label="Go Checkout"></button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="p-col-12 p-lg-4">
+    <div class="p-grid">
+      <div class="p-col-12" (click)="active = 0">
+        <app-main-page-card
+          title="Find Hospital"
+          icon="pi-map-marker"
+          [active]="active === 0"
+        ></app-main-page-card>
+      </div>
+      <div class="p-col-12" (click)="active = 1">
+        <app-main-page-card
+          title="Predict Disease"
+          icon="pi-chart-bar"
+          [active]="active === 1"
+        >
+        </app-main-page-card>
+      </div>
+      <div class="p-col-12" (click)="active = 2">
+        <app-main-page-card
+          title="Open Appointment"
+          icon="pi-calendar"
+          [active]="active === 2"
+        ></app-main-page-card>
+      </div>
+      <div class="p-col-12" (click)="active = 3">
+        <app-main-page-card
+          title="Closed Appointments"
+          icon="pi-calendar-times"
+          [active]="active === 3"
+        ></app-main-page-card>
+      </div>
+    </div>
+  </div>
+</div>

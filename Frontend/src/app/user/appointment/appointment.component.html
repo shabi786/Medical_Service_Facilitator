@@ -1,0 +1,14 @@
+<app-pagination
+  [recordsPerPage]="10"
+  [totalRecords]="totalAppointments"
+  (clickedPage)="getData($event)"
+  *ngIf="totalPages > 0"
+></app-pagination>
+<div class="p-grid p-mt-1">
+  <div class="p-col-12 p-lg-6" *ngFor="let appointment of appointments">
+    <app-appointment-card
+      [appointment]="appointment"
+      (deleted)="getData()"
+    ></app-appointment-card>
+  </div>
+</div>

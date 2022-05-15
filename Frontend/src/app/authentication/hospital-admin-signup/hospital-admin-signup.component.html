@@ -1,0 +1,72 @@
+<form class="p-mt-3" (submit)="onSubmit($event)">
+  <div class="p-fluid">
+    <div class="p-float-label">
+      <input
+        type="email"
+        id="email"
+        required
+        name="email"
+        pInputText
+        [(ngModel)]="email"
+      />
+      <label for="email">Email</label>
+    </div>
+    <div class="p-float-label p-my-4">
+      <input
+        type="password"
+        pInputText
+        id="password"
+        required
+        name="password"
+        [(ngModel)]="password"
+      />
+      <label for="password">Password</label>
+    </div>
+    <div class="p-mt-3">
+      <div class="p-inputgroup">
+        <input
+          type="text"
+          class="form-control"
+          name="hospitalToSearch"
+          id="Hospital"
+          placeholder="Hospital"
+          [(ngModel)]="hospitalToSearch"
+          pInputText
+        />
+        <button
+          type="button"
+          pButton
+          pRipple
+          label="Search"
+          (click)="searchHospital(hospitalToSearch)"
+        ></button>
+      </div>
+    </div>
+    <div *ngIf="hospitals.length" class="p-mt-2">
+      <p-dropdown
+        [options]="hospitals"
+        [(ngModel)]="hospital"
+        optionLabel="name"
+        optionValue="id"
+        name="hospital"
+      ></p-dropdown>
+    </div>
+    <div class="p-float-label p-my-4">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        pInputText
+        required
+        [(ngModel)]="name"
+      />
+      <label for="name">Name</label>
+    </div>
+  </div>
+  <button
+    type="submit"
+    pButton
+    label="Sign Up"
+    [disabled]="!email || !password || !name || !hospital"
+  ></button>
+</form>

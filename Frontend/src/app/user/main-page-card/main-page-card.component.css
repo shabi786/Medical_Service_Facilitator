@@ -1,0 +1,28 @@
+.user-card {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-weight: bold;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .user-card {
+    height: 8vh;
+  }
+
+}
+.user-card:hover{
+  box-shadow:0 9px 11px -5px rgba(0,0,0,.2),0 18px 28px 2px rgba(0,0,0,.14),0 7px 34px 6px rgba(0,0,0,.12)
+}
+
+.pi {
+  font-size: 150%;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.active {
+  background-color:cornflowerblue;
+  color: white;
+}

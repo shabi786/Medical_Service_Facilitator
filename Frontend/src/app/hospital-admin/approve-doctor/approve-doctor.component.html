@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="px-card py-10 border-bottom">
+    <h2 class="card-title font-size-18 m-0">Unapproved Hospital Admins</h2>
+  </div>
+  <div class="content">
+    <ol>
+      <li *ngFor="let doctor of unapproved">
+        {{ doctor.name }} - {{ doctor.email }}
+        <button
+          class="btn btn-success btn-sm mr-2"
+          (click)="approveDoctor(doctor.email)"
+        >
+          Approve
+        </button>
+        <button
+          class="btn btn-danger btn-sm"
+          (click)="deleteDoctor(doctor.email)"
+        >
+          Reject
+        </button>
+      </li>
+    </ol>
+  </div>
+  <div class="px-card py-10 bg-light-lm bg-very-dark-dm rounded-bottom">
+    <hr />
+    <p class="font-size-12 m-0">
+      <button class="btn btn-primary" (click)="getList()">Refresh</button>
+    </p>
+  </div>
+</div>

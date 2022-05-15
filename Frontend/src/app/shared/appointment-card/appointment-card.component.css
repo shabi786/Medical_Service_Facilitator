@@ -1,0 +1,12 @@
+.custom-marker {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #0d89ec;
+}
+

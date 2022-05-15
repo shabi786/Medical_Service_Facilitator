@@ -1,0 +1,66 @@
+<p-card [header]="'Hospital ' + appointment.hospital.name">
+  <div>
+    <div>Appointment ID: {{ appointment.id }}</div>
+    <div>
+      Patient: {{ appointment.patient.name }}, {{ appointment.patient.mobile }}
+    </div>
+
+    <div>Next Appointment: {{ appointment.nextAppointment }}</div>
+    <div *ngIf="!appointment.closed">Unpaid: {{ getUnpaid() }}</div>
+  </div>
+  <div class="p-mt-2">
+    <div>
+      <button
+        pButton
+        (click)="show = !show"
+        [disabled]="appointment.visits.length === 0"
+        class="p-button-sm"
+        [label]="show ? 'Hide Details' : 'Show Details'"
+      ></button>
+      <button
+        pButton
+        class="p-button-danger p-button-sm p-ml-2"
+        *ngIf="
+          forceCancel ||
+          (appointment.cancellable && !appointment.closed && !hideCancel)
+        "
+        (click)="cancelAppointment(appointment.id)"
+        label="Cancel"
+      ></button>
+    </div>
+  </div>
+</p-card>
+<p-dialog
+  header="Appointment Details"
+  [(visible)]="show"
+  [modal]="true"
+  [draggable]="false"
+  [style]="{ width: '90vw' }"
+  [maximizable]="true"
+>
+  <div class="card">
+    <p-timeline
+      [value]="appointment.visits"
+      align="alternate"
+      styleClass="customized-timeline"
+    >
+      <ng-template pTemplate="marker">
+        <span class="custom-marker p-shadow-2">
+          <i class="pi pi-user"></i>
+        </span>
+      </ng-template>
+      <ng-template pTemplate="content" let-event>
+        <p-card [subheader]="'Doctor: ' + event.doctor + ' on ' + event.date">
+          <p>Fees: {{ event.fees }}, Unpaid: {{ event.unpaid }}</p>
+          <p>Remarks: {{ event.remarks }}</p>
+          <div>
+            Monitoring Data
+            <div *ngFor="let item of event.monitoring | keyvalue">
+              {{ item.key }} : {{ item.value }}
+            </div>
+          </div>
+        </p-card>
+      </ng-template>
+    </p-timeline>
+  </div>
+</p-dialog>

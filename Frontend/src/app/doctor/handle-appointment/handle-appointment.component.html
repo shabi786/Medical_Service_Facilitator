@@ -1,0 +1,119 @@
+<div *ngIf="!user.approved">
+  <h3 class="pt-5">
+    {{ user.email }} is not approved.<br />Contact your hospital admin to
+    approve you and re-login.
+  </h3>
+</div>
+<div *ngIf="user.approved">
+  <form (submit)="searchAppointment($event)">
+    <div class="form-group">
+      <label>Enter Appointment ID</label>
+      <input
+        class="form-control"
+        name="id"
+        [value]="appointmentID"
+        (input)="handleInput($event)"
+        required
+      />
+    </div>
+    <button class="btn btn-success" [disabled]="!appointmentID.trim()">
+      See Appointment Details
+    </button>
+  </form>
+  <div *ngIf="appointment">
+    <app-appointment-card
+      [appointment]="appointment"
+      [hideCancel]="true"
+    ></app-appointment-card>
+    <form (submit)="addDetail($event)" *ngIf="!appointment.closed">
+      <div class="form-group">
+        <label>Remarks</label>
+        <textarea
+          class="form-control"
+          [(ngModel)]="remarks"
+          name="remarks"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Next Date of Appointment</label>
+        <input
+          type="datetime-local"
+          class="form-control"
+          name="nextAppointment"
+          [(ngModel)]="nextAppointment"
+        />
+      </div>
+      <div class="form-group">
+        <label>Fees</label>
+        <input
+          type="number"
+          [min]="0"
+          class="form-control"
+          name="fees"
+          [(ngModel)]="fees"
+        />
+      </div>
+      <div class="form-group">
+        <label>Unpaid</label>
+        <input
+          type="number"
+          class="form-control"
+          min="0"
+          name="unpaid"
+          [(ngModel)]="unpaid"
+        />
+      </div>
+      <div>
+        <b>Monitoring Details</b>
+        <div class="row">
+          <div class="col-10 col-lg-11 pr-20">
+            <input
+              type="text"
+              name="monitoringParameter"
+              class="form-control"
+              label="Monitoring Parameter"
+              [(ngModel)]="monitoringParameter"
+            />
+          </div>
+          <div class="col-2 col-lg-1">
+            <button
+              class="btn btn-primary btn-block"
+              type="button"
+              (click)="addMonitoringRow()"
+              [disabled]="!monitoringParameter.trim()"
+            >
+              Add Row
+            </button>
+          </div>
+          <div class="col-12" *ngFor="let monitor of monitoring; let i = index">
+            <div class="row mt-10">
+              <div class="col-2 text-center">{{ monitor[0] }}:</div>
+              <div class="col-8 pr-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  [name]="monitor[0]"
+                  [(ngModel)]="monitoring[i][1]"
+                />
+              </div>
+              <div class="col-2">
+                <button
+                  class="btn btn-danger btn-block"
+                  (click)="removeMonitoringRow(i)"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="btn btn-success my-20"
+        [disabled]="!remarks.trim() || !nextAppointment"
+      >
+        Add Visit Details
+      </button>
+    </form>
+  </div>
+</div>

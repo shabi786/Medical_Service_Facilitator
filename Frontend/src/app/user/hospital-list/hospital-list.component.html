@@ -1,0 +1,150 @@
+<div (resize)="changeDimensions()">
+  <h1 class="p-text-center">Search</h1>
+  <div class="p-d-flex p-jc-center">
+    <form (submit)="onSubmit($event)">
+      <div class="p-fluid">
+        <div class="p-grid">
+          <div class="p-col-12 p-md-6 p-xl-2 p-pr-3">
+            <div class="p-float-label">
+              <input
+                type="text"
+                class="form-control"
+                id="district"
+                required
+                name="district"
+                pInputText
+                [(ngModel)]="district"
+              />
+              <label for="district">District</label>
+            </div>
+          </div>
+          <div class="p-col-12 p-md-6 p-xl-2">
+            <div class="p-float-label">
+              <input
+                type="text"
+                class="form-control"
+                id="state"
+                required
+                name="state"
+                pInputText
+                [(ngModel)]="state"
+              />
+              <label for="state">State</label>
+            </div>
+          </div>
+          <div class="p-col-12 p-md-6 p-xl-2">
+            <div class="p-float-label">
+              <input
+                type="number"
+                class="form-control"
+                name="pincode"
+                id="pincode"
+                pInputText
+                required
+                [(ngModel)]="pincode"
+              />
+              <label for="pincode">Pincode</label>
+            </div>
+          </div>
+          <div class="p-col-12 p-md-6 p-xl-3">
+            <div>
+              <p-dropdown
+                [options]="diseases"
+                [(ngModel)]="disease"
+                name="disease"
+              ></p-dropdown>
+            </div>
+          </div>
+          <div class="p-col-12 p-md-6 p-xl-2">
+            <button
+              type="submit"
+              class="btn btn-primary ml-auto mt-20"
+              [disabled]="!(state || district || pincode || disease)"
+              pButton
+              label="Search"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="p-grid" *ngIf="hospitals.length > 0">
+  <div class="p-col-12">
+    <app-pagination
+      [totalRecords]="totalRecords"
+      [recordsPerPage]="maxResults"
+      (clickedPage)="this.changePage($event)"
+    ></app-pagination>
+  </div>
+
+  <div
+    class="p-col-12 p-md-6 p-xl-5"
+    *ngFor="let hospital of hospitals; let i = index"
+    [ngClass]="{ 'p-xl-offset-1': i % 2 == 0 }"
+  >
+    <p-card [header]="hospital.name">
+      <div>Address:-{{ hospital.address }}</div>
+      <div>State:-{{ hospital.state }}</div>
+      <div>District:-{{ hospital.district }}</div>
+      <div>Pincode:-{{ hospital.pincode }}</div>
+      <div>MobileNo:-{{ hospital.mobile }}</div>
+      <div class="mb-10">Emergency:-{{ hospital.emergency }}</div>
+      <p-footer>
+        <button pButton label="Book Appointment"></button>
+        <button
+          pButton
+          label="View on Map"
+          class="p-ml-2"
+          (click)="selectedHospital = hospital; showMap = true"
+        ></button>
+      </p-footer>
+
+      <div *ngIf="opened === i">
+        <label><b>Date and time</b></label>
+        <input
+          name="date"
+          [(ngModel)]="date"
+          type="datetime-local"
+          class="form-control mb-5"
+        />
+        <div class="row">
+          <div class="col mr-5">
+            <button
+              class="btn btn-success btn-block"
+              (click)="book(hospital.id, date)"
+              [disabled]="!date"
+            >
+              Book
+            </button>
+          </div>
+          <div class="col ml-5">
+            <button
+              class="btn btn-danger btn-block"
+              (click)="opened = -1"
+              *ngIf="opened === i"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </p-card>
+  </div>
+</div>
+
+<p-dialog
+  [header]="selectedHospital.name"
+  [(visible)]="showMap"
+  *ngIf="selectedHospital"
+>
+  <iframe
+    [width]="width"
+    [height]="height"
+    frameborder="0"
+    style="border: 0"
+    [src]="getUrl()"
+    allowfullscreen
+  >
+  </iframe>
+</p-dialog>

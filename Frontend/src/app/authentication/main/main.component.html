@@ -1,0 +1,63 @@
+<div id="overlay" #overlay></div>
+<div class="p-d-flex p-flex-column p-jc-center main">
+  <h1 class="p-text-center">Choose your type</h1>
+  <div class="p-grid p-mx-md-1">
+    <div
+      class="p-col-6 p-lg-3"
+      (click)="display = true; toggleOverlay(); type = 0"
+    >
+      <app-main-page-card imageSrc="user.jpg" title="User"></app-main-page-card>
+    </div>
+    <div
+      class="p-col-6 p-lg-3"
+      (click)="display = true; toggleOverlay(); type = 1"
+    >
+      <app-main-page-card
+        imageSrc="doctor.jpeg"
+        title="Doctor"
+      ></app-main-page-card>
+    </div>
+    <div
+      class="p-col-6 p-lg-3"
+      (click)="display = true; toggleOverlay(); type = 2"
+    >
+      <app-main-page-card
+        imageSrc="hospital.jpg"
+        title="Hospital Admin"
+      ></app-main-page-card>
+    </div>
+    <div
+      class="p-col-6 p-lg-3"
+      (click)="display = true; toggleOverlay(); type = 3"
+    >
+      <app-main-page-card
+        imageSrc="super.jpg"
+        title="Super Admin"
+      ></app-main-page-card>
+    </div>
+  </div>
+</div>
+<p-dialog
+  [style]="{ width: getWidth() > 768 ? '60vw' : '90vw' }"
+  [header]="getTitle()"
+  [(visible)]="display"
+  (onHide)="toggleOverlay()"
+>
+  <app-doctor-login *ngIf="type === 1 && !signup"></app-doctor-login>
+  <app-hospital-admin-login
+    *ngIf="type === 2 && !signup"
+  ></app-hospital-admin-login>
+  <app-super-admin-login *ngIf="type === 3 && !signup"></app-super-admin-login>
+  <app-user-login *ngIf="type == 0 && !signup"></app-user-login>
+  <app-doctor-signup *ngIf="type === 1 && signup"></app-doctor-signup>
+  <app-hospital-admin-signup
+    *ngIf="type === 2 && signup"
+  ></app-hospital-admin-signup>
+  <app-super-admin-signup *ngIf="type === 3 && signup"></app-super-admin-signup>
+  <app-user-signup *ngIf="type == 0 && signup"></app-user-signup>
+  <p-footer>
+    <p-button (click)="signup = !signup"
+      >Switch to {{ signup ? "Login" : "Signup" }}</p-button
+    >
+  </p-footer>
+</p-dialog>

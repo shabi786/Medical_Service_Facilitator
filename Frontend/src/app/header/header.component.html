@@ -1,0 +1,18 @@
+<p-menubar [model]="items">
+  <button
+    pButton
+    pRipple
+    type="button"
+    [icon]="ux.dark ? 'pi pi-moon' : 'pi pi-sun'"
+    class="p-button-rounded p-button-link"
+    (click)="ux.toggleDarkMode()"
+  ></button>
+
+  <button
+    pButton
+    label="Logout"
+    icon="pi pi-power-off"
+    class="p-button-link"
+    (click)="logout()"
+  ></button>
+</p-menubar>

@@ -1,0 +1,66 @@
+<form class="p-mt-3" (submit)="onSubmit($event)">
+  <div class="p-fluid">
+    <div class="p-float-label">
+      <input
+        type="email"
+        pInputText
+        id="email"
+        required
+        name="email"
+        [(ngModel)]="email"
+      />
+      <label for="email">Email</label>
+    </div>
+    <div class="p-float-label p-my-4">
+      <input
+        type="password"
+        pInputText
+        id="password"
+        required
+        name="password"
+        [(ngModel)]="password"
+      />
+      <label for="password">Password</label>
+    </div>
+    <div class="">
+      <label for="dob">Date of birth</label>
+      <input
+        type="date"
+        pInputText
+        name="dob"
+        id="dob"
+        required
+        [(ngModel)]="dob"
+      />
+    </div>
+    <div class="p-float-label p-my-4">
+      <input
+        type="text"
+        pInputText
+        name="name"
+        id="name"
+        required
+        [(ngModel)]="name"
+      />
+      <label for="name">Name</label>
+    </div>
+    <div class="p-float-label">
+      <input
+        type="number"
+        pInputText
+        name="mobile"
+        id="tel"
+        required
+        [(ngModel)]="mobileNo"
+      />
+      <label for="tel">Mobile no</label>
+    </div>
+  </div>
+  <button
+    type="submit"
+    pButton
+    label="Sign Up"
+    class="p-mt-2"
+    [disabled]="!email || !password || !name || !dob || mobileNo <= 0"
+  ></button>
+</form>

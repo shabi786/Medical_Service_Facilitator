@@ -1,0 +1,614 @@
+{
+  "Fungal infection": {
+    "description": [
+      "Any disease caused by a fungus.",
+      "A fungus that invades the tissue can cause a disease that's confined to the skin, spreads into tissue, bones and organs or affects the whole body.",
+      "Symptoms depend on the area affected, but can include skin rash or vaginal infection resulting in abnormal discharge.",
+      "Treatments include antifungal medication."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Medium-term: resolves within months",
+    "img": "fungal.jpg"
+  },
+  "Allergy": {
+    "description": [
+      "A condition in which the immune system reacts abnormally to a foreign substance."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "allergy.jpg"
+  },
+  "GERD": {
+    "description": [
+      "A digestive disease in which stomach acid or bile irritates the food pipe lining.",
+      "This is a chronic disease that occurs when stomach acid or bile flows into the food pipe and irritates the lining. Acid reflux and heartburn more than twice a week may indicate GERD.",
+      "Symptoms include burning pain in the chest that usually occurs after eating and worsens when lying down.",
+      "Relief from lifestyle changes and over-the-counter medication is usually temporary. Stronger medication may be required."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Usually self-diagnosable",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "Medium-term: resolves within months",
+    "img": "gerd.jpg"
+  },
+  "Chronic cholestasis": {
+    "description": [
+      "Any condition in which the flow of bile from the liver stops or slows.",
+      "Bile is a digestive fluid. Cholestasis is reduced flow of bile and can be caused by a liver infection, gallstones and cancer.",
+      "Symptoms include intense itching, dark urine, yellowing of eyes and skin, nausea, lack of appetite and light-coloured bowel movements.",
+      "Treatment must address the underlying condition and ranges from diet and medication to surgical procedures."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "",
+    "img": "chronic_cholestasis.jpg"
+  },
+  "Drug Reaction": {
+    "description": [
+      "An abnormal reaction of the immune system to a medication.",
+      "In many cases, the allergic reaction is mild. Severe cases can lead to shock and may be life-threatening.",
+      "Hives, rash and fever are common symptoms.",
+      "Treatment involves discontinuing the medication that’s causing the reaction. Other medication can reduce the allergy symptoms, such as antihistamines. In severe cases, bronchodilators or adrenalin may be required."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "",
+    "img": "drugreaction.jpg"
+  },
+  "Peptic ulcer disease": {
+    "description": [
+      "A sore that develops on the lining of the oesophagus, stomach or small intestine.",
+      "Ulcers occur when stomach acid damages the lining of the digestive tract. Common causes include the bacteria H. Pylori and anti-inflammatory pain relievers including aspirin.",
+      "Upper abdominal pain is a common symptom.",
+      "Treatment usually includes medication to decrease stomach acid production. If it is caused by bacteria, antibiotics may be required."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Medium-term: resolves within months",
+    "img": "peptic.jpg"
+  },
+  "AIDS": {
+    "description": [
+      "HIV causes AIDS and interferes with the body's ability to fight infections.",
+      "The virus can be transmitted through contact with infected blood, semen or vaginal fluids.",
+      "Within a few weeks of HIV infection, flu-like symptoms such as fever, sore throat and fatigue can occur. Then the disease is usually asymptomatic until it progresses to AIDS. AIDS symptoms include weight loss, fever or night sweats, fatigue and recurrent infections.",
+      "No cure exists for AIDS, but strict adherence to antiretroviral regimens (ARVs) can dramatically slow the disease's progress as well as prevent secondary infections and complications."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "aids.png"
+  },
+  "Diabetes": {
+    "description": [
+      "A chronic condition that affects the way the body processes blood sugar (glucose).",
+      "With type 2 diabetes, the body either doesn't produce enough insulin, or it resists insulin.",
+      "Symptoms include increased thirst, frequent urination, hunger, fatigue and blurred vision. In some cases, there may be no symptoms.",
+      "Treatments include diet, exercise, medication and insulin therapy."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "diabetes.jpg"
+  },
+  "Gastroenteritis": {
+    "description": [
+      "An intestinal infection marked by diarrhoea, cramps, nausea, vomiting and fever.",
+      "Stomach flu is typically spread by contact with an infected person or through contaminated food or water.",
+      "Diarrhoea, cramps, nausea, vomiting and low-grade fever are common symptoms.",
+      "Avoiding contaminated food and water and washing hands can often help prevent infection. Rest and rehydration are the mainstays of treatment."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Usually self-treatable",
+    "diagnosis": "Usually self-diagnosable",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "gas.jpg"
+  },
+  "Bronchial Asthma": {
+    "description": [
+      "A condition in which a person's airways become inflamed, narrow and swell and produce extra mucus, which makes it difficult to breathe.",
+      "Asthma can be minor or it can interfere with daily activities. In some cases, it may lead to a life-threatening attack.",
+      "Asthma may cause difficulty breathing, chest pain, cough and wheezing. The symptoms may sometimes flare up.",
+      "Asthma can usually be managed with rescue inhalers to treat symptoms (salbutamol) and controller inhalers that prevent symptoms (steroids). Severe cases may require longer-acting inhalers that keep the airways open (formoterol, salmeterol, tiotropium), as well as inhalant steroids."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "asthma.jpg"
+  },
+  "Hypertension": {
+    "description": [
+      "A condition in which the force of the blood against the artery walls is too high.",
+      "Usually hypertension is defined as blood pressure above 140/90, and is considered severe if the pressure is above 180/120.",
+      "High blood pressure often has no symptoms. Over time, if untreated, it can cause health conditions, such as heart disease and stroke.",
+      "Eating a healthier diet with less salt, exercising regularly and taking medication can help lower blood pressure."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging not required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "hypertension.png"
+  },
+  " Migraine": {
+    "description": [
+      "A headache of varying intensity, often accompanied by nausea and sensitivity to light and sound.",
+      "Migraine headaches are sometimes preceded by warning symptoms. Triggers include hormonal changes, certain food and drink, stress and exercise.",
+      "Migraine headaches can cause throbbing in one particular area that can vary in intensity. Nausea and sensitivity to light and sound are also common symptoms.",
+      "Preventive and pain-relieving medication can help manage migraine headaches."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Usually self-diagnosable",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "migraine.jpg"
+  },
+  "Cervical spondylosis": {
+    "description": [
+      "A general term for age-related wear and tear of the spinal discs.",
+      "Spondylosis is common and worsens with age. This condition is often used to describe degenerative arthritis (osteoarthritis) of the spine.",
+      "Most people don't have symptoms, but some may experience pain or muscle spasms.",
+      "In many cases, no specific treatment is required. If symptoms occur, treatments include medication, corticosteroid injections, physiotherapy and sometimes surgery."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "spondylosis.jpg"
+  },
+  "Paralysis (brain hemorrhage)": {
+    "description": [
+      "An emergency condition in which a ruptured blood vessel causes bleeding inside the brain.",
+      "High blood pressure and trauma are two leading causes. Taking blood-thinning drugs may also increase a person's risk.",
+      "Symptoms can vary based on the location of the haemorrhage in the brain, but may include numbness or weakness in part of the face, difficulty speaking or difficulty walking.",
+      "Emergency treatment is required for cerebral haemorrhage. It usually involves medication and close monitoring in an intensive care unit. In rare cases, surgery may be required to relieve pressure around the brain."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Critical: needs emergency care",
+    "img": "hemorrhage.jpg"
+  },
+  "Jaundice": {
+    "description": [
+      "Yellow skin caused by the build-up of bilirubin in the blood.",
+      "Jaundice may occur if the liver can't efficiently process red blood cells as they break down. It's normal in healthy newborns and usually clears on its own. At other ages, it may signal infection or liver disease.",
+      "Symptoms include yellowing of the skin and whites of the eyes.",
+      "Some newborns may require light therapy for a day or so. In other cases, treatment involves addressing the underlying cause."
+    ],
+    "common": "",
+    "cases": "",
+    "treatable": "",
+    "diagnosis": "",
+    "labTest": "",
+    "duration": "",
+    "img": "jaundice.jpg"
+  },
+  "Malaria": {
+    "description": [
+      "A disease caused by a plasmodium parasite, transmitted by the bite of infected mosquitoes.",
+      "The severity of malaria varies based on the species of plasmodium.",
+      "Symptoms are chills, fever and sweating, usually occurring a few weeks after being bitten.",
+      "People travelling to areas where malaria is common typically take protective drugs before, during and after their trip. Treatment includes antimalarial drugs."
+    ],
+    "common": "Rare",
+    "cases": "Fewer than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "malaria.jpg"
+  },
+  "Chicken pox": {
+    "description": [
+      "A highly contagious viral infection which causes an itchy, blister-like rash on the skin.",
+      "Chickenpox is highly contagious to those who haven't had the disease or been vaccinated against it.",
+      "The most characteristic symptom is an itchy, blister-like rash on the skin.",
+      "Chickenpox can be prevented by a vaccine. Treatment usually involves relieving symptoms, although high-risk groups may receive antiviral medication."
+    ],
+    "common": "Rare",
+    "cases": "Fewer than 1 million cases per year (India)",
+    "treatable": "Usually self-treatable",
+    "diagnosis": "Usually self-diagnosable",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "chicken_pox.jpg"
+  },
+  "Dengue": {
+    "description": [
+      "A mosquito-borne viral disease occurring in tropical and subtropical areas.",
+      "Those who become infected with the virus a second time are at a significantly greater risk of developing severe disease.",
+      "Symptoms include high fever, headache, rash and muscle and joint pain. In severe cases there is serious bleeding and shock, which can be life threatening.",
+      "Treatment includes fluids and pain relievers. Severe cases require hospital care."
+    ],
+    "common": "Very rare",
+    "cases": "Fewer than 100 thousand cases per year (India)",
+    "treatable": "",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "dengue.jpg"
+  },
+  "Typhoid": {
+    "description": [
+      "Typhoid fever is an infection that spreads through contaminated food and water.",
+      "Vaccines are recommended in areas where typhoid fever is common.",
+      "Symptoms include high fever, headache, stomach pain, weakness, vomiting and loose stools.",
+      "Treatment includes antibiotics and fluids."
+    ],
+    "common": "Very rare",
+    "cases": "Fewer than 100 thousand cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "typhoid.png"
+  },
+  "hepatitis A": {
+    "description": [
+      "A highly contagious liver infection caused by the hepatitis A virus.",
+      "Hepatitis A is preventable by vaccine. It spreads from contaminated food or water or contact with someone who is infected.",
+      "Symptoms include fatigue, nausea, abdominal pain, loss of appetite and low-grade fever.",
+      "The condition clears up on its own in one or two months. Rest and adequate hydration can help."
+    ],
+    "common": "Rare",
+    "cases": "Fewer than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "hepatitis-a.jpg"
+  },
+  "Hepatitis B": {
+    "description": [
+      "A serious liver infection caused by the hepatitis B virus that's easily preventable by a vaccine.",
+      "This disease is most commonly spread by exposure to infected bodily fluids.",
+      "Symptoms are variable and include yellowing of the eyes, abdominal pain and dark urine. Some people, particularly children, don't experience any symptoms. In chronic cases, liver failure, cancer or scarring can occur.",
+      "The condition often clears up on its own. Chronic cases require medication and possibly a liver transplant."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "",
+    "img": "hepatitis-bc.png"
+  },
+  "Hepatitis C": {
+    "description": [
+      "An infection caused by a virus that attacks the liver and leads to inflammation.",
+      "The virus is spread by contact with contaminated blood; for example, from sharing needles or from unsterile tattoo equipment.",
+      "Most people have no symptoms. Those who do develop symptoms may have fatigue, nausea, loss of appetite and yellowing of the eyes and skin.",
+      "Hepatitis C is treated with antiviral medication. In some people, newer medicines can eradicate the virus."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "",
+    "img": "hepatitis-bc.png"
+  },
+  "Hepatitis D": {
+    "description": [
+      "A serious liver disease caused by infection with the hepatitis D virus.",
+      "Hepatitis D only occurs amongst people who are infected with the Hepatitis B virus. Transmission requires contact with infectious blood. At-risk populations include intravenous drug abusers and men who have sex with men.",
+      "Symptoms include abdominal pain, nausea and fatigue.",
+      "There are few treatments specifically for hepatitis D, although different regimes may be tried. Management also focuses on supportive care."
+    ],
+    "common": "Rare",
+    "cases": "Fewer than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "hepatitis-d.jpg"
+  },
+  "Hepatitis E": {
+    "description": [
+      "A liver disease caused by the hepatitis E virus.",
+      "The hepatitis E virus is mainly transmitted through drinking water contaminated with faecal matter.",
+      "Symptoms include jaundice, lack of appetite and nausea. In rare cases, it may progress to acute liver failure.",
+      "Hepatitis E usually resolves on its own within four to six weeks. Treatment focuses on supportive care, rehydration and rest."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "hepatitis-e.jpg"
+  },
+  "Alcoholic hepatitis": {
+    "description": [
+      "Liver inflammation caused by drinking too much alcohol.",
+      "Alcoholic hepatitis can occur in people who drink heavily for many years.",
+      "Symptoms include yellow skin and eyes along with increasing stomach size due to fluid accumulation.",
+      "Treatment involves hydration, nutritional care and stopping alcohol use. Steroid drugs can help reduce liver inflammation."
+    ],
+    "common": "Rare",
+    "cases": "Fewer than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "alcoholic.jpg"
+  },
+  "Tuberculosis": {
+    "description": [
+      "A potentially serious infectious bacterial disease that mainly affects the lungs.",
+      "The bacteria that cause TB are spread when an infected person coughs or sneezes.",
+      "Most people infected with the bacteria that cause tuberculosis don't have symptoms. When symptoms do occur, they usually include a cough (sometimes blood-tinged), weight loss, night sweats and fever.",
+      "Treatment isn't always required for those without symptoms. Patients with active symptoms will require a long course of treatment involving multiple antibiotics."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Medium-term: resolves within months",
+    "img": "tb.jpg"
+  },
+  "Common Cold": {
+    "description": [
+      "A common viral infection of the nose and throat.",
+      "In contrast to the flu, a common cold can be caused by many different types of viruses. The condition is generally harmless and symptoms usually resolve within two weeks.",
+      "Symptoms include a runny nose, sneezing and congestion. High fever or severe symptoms are reasons to see a doctor, especially in children.",
+      "Most people recover on their own within two weeks. Over-the-counter products and home remedies can help control symptoms."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Usually self-treatable",
+    "diagnosis": "Usually self-diagnosable",
+    "labTest": "Lab tests or imaging not required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "cold.jpg"
+  },
+  "Pneumonia": {
+    "description": [
+      "Infection that inflames air sacs in one or both lungs, which may fill with fluid.",
+      "With pneumonia, the air sacs may fill with fluid or pus. The infection can be life-threatening to anyone, but particularly to infants, children and people over 65.",
+      "Symptoms include a cough with phlegm or pus, fever, chills and difficulty breathing.",
+      "Antibiotics can treat many forms of pneumonia. Some forms of pneumonia can be prevented by vaccines."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "pneumonia.png"
+  },
+  "Dimorphic hemorrhoids(piles)": {
+    "description": [
+      "Swollen and inflamed veins in the rectum and anus that cause discomfort and bleeding.",
+      "Haemorrhoids are usually caused by straining during bowel movements, obesity or pregnancy.",
+      "Discomfort is a common symptom, especially during bowel movements or when sitting. Other symptoms include itching and bleeding.",
+      "A high-fibre diet can be effective, along with stool softeners. In some cases, a medical procedure to remove the haemorrhoid may be needed to provide relief."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Usually self-diagnosable",
+    "labTest": "Lab tests or imaging not required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "piles.png"
+  },
+  "Heart Attack": {
+    "description": [
+      "A blockage of blood flow to the heart muscle.",
+      "A heart attack is a medical emergency. A heart attack usually occurs when a blood clot blocks blood flow to the heart. Without blood, tissue loses oxygen and dies.",
+      "Symptoms include tightness or pain in the chest, neck, back or arms, as well as fatigue, lightheadedness, abnormal heartbeat and anxiety. Women are more likely to have atypical symptoms than men.",
+      "Treatment ranges from lifestyle changes and cardiac rehabilitation to medication, stents and bypass surgery."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "heart_attack.jpg"
+  },
+  "Varicose Veins": {
+    "description": [
+      "Gnarled, enlarged veins, most commonly appearing in the legs and feet.",
+      "Varicose veins are generally benign. The cause of this condition is not known.",
+      "For many people, there are no symptoms and varicose veins are simply a cosmetic concern. In some cases, they cause aching pain and discomfort or signal an underlying circulatory problem.",
+      "Treatment involves compression stockings, exercise or procedures to close or remove the veins."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Usually self-diagnosable",
+    "labTest": "Lab tests or imaging not required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "varicose.jpg"
+  },
+  "Hypothyroidism": {
+    "description": [
+      "A condition in which the thyroid gland doesn't produce enough thyroid hormone.",
+      "Hypothyroidism's deficiency of thyroid hormones can disrupt such things as heart rate, body temperature and all aspects of metabolism. Hypothyroidism is most prevalent in older women.",
+      "Major symptoms include fatigue, cold sensitivity, constipation, dry skin and unexplained weight gain.",
+      "Treatment consists of thyroid hormone replacement."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "thyroid.jpg"
+  },
+  "Hyperthyroidism": {
+    "description": [
+      "The overproduction of a hormone by the butterfly-shaped gland in the neck (thyroid).",
+      "Hyperthyroidism is the production of too much thyroxine hormone. It can increase metabolism.",
+      "Symptoms include unexpected weight loss, rapid or irregular heartbeat, sweating and irritability, although the elderly often experience no symptoms.",
+      "Treatments include radioactive iodine, medication and sometimes surgery."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Medium-term: resolves within months",
+    "img": "hyperth.png"
+  },
+  "Hypoglycemia": {
+    "description": [
+      "Low blood sugar, the body's main source of energy.",
+      "Diabetes treatment and other conditions can cause hypoglycaemia.",
+      "Confusion, heart palpitations, shakiness and anxiety are symptoms.",
+      "Consuming high-sugar foods or drinks, such as orange juice or regular fizzy drinks, can treat this condition. Alternatively, medication can be used to raise blood sugar levels. It's also important that a doctor identifies and treats the underlying cause."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging always required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "hypoglycemia.jpg"
+  },
+  "Osteoarthritis": {
+    "description": [
+      "A type of arthritis that occurs when flexible tissue at the ends of bones wears down.",
+      "The wearing down of the protective tissue at the ends of bones (cartilage) occurs gradually and worsens over time.",
+      "Joint pain in the hands, neck, lower back, knees or hips is the most common symptom.",
+      "Medication, physiotherapy and sometimes surgery can help reduce pain and maintain joint movement."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "osteoarthritis.jpg"
+  },
+  "Arthritis": {
+    "description": [
+      "Inflammation of one or more joints, causing pain and stiffness that can worsen with age.",
+      "Different types of arthritis exist, each with different causes including wear and tear, infections and underlying diseases.",
+      "Symptoms include pain, swelling, reduced range of motion and stiffness.",
+      "Medication, physiotherapy or sometimes surgery helps reduce symptoms and improve quality of life."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "arthiritis.jpg"
+  },
+  "(vertigo) Paroxysmal  Positional Vertigo": {
+    "description": [
+      "Episodes of dizziness and a sensation of spinning with certain head movements.",
+      "Benign paroxysmal positional vertigo (BPPV) is triggered by certain changes in head position, such as tipping the head up or down. It's rarely serious unless it increases the risk of falling.",
+      "People can experience dizziness, a spinning sensation (vertigo), lightheadedness, unsteadiness, loss of balance and nausea.",
+      "Treatment includes a series of head movements that shift particles in the ears."
+    ],
+    "common": "Common",
+    "cases": "More than 1 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "vertigo.jpg"
+  },
+  "Acne": {
+    "description": [
+      "A skin condition that occurs when hair follicles plug with oil and dead skin cells.",
+      "Acne is most common in teenagers and young adults.",
+      "Symptoms range from uninflamed blackheads to pus-filled pimples or large, red and tender bumps.",
+      "Treatments include over-the-counter creams and cleanser, as well as prescription antibiotics."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging not required",
+    "duration": "",
+    "img": "acne.jpg"
+  },
+  "Urinary tract infection": {
+    "description": [
+      "An infection in any part of the urinary system, the kidneys, bladder or urethra.",
+      "Urinary tract infections are more common in women. They usually occur in the bladder or urethra, but more serious infections involve the kidney.",
+      "A bladder infection may cause pelvic pain, increased urge to urinate, pain with urination and blood in the urine. A kidney infection may cause back pain, nausea, vomiting and fever.",
+      "Common treatment is with antibiotics."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Usually self-diagnosable",
+    "labTest": "Lab tests or imaging often required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "urinary.jpg"
+  },
+  "Psoriasis": {
+    "description": [
+      "A condition in which skin cells build up and form scales and itchy, dry patches.",
+      "Psoriasis is thought to be an immune system problem. Triggers include infections, stress and cold.",
+      "The most common symptom is a rash on the skin, but sometimes the rash involves the nails or joints.",
+      "Treatment aims to remove scales and stop skin cells from growing so quickly. Topical ointments, light therapy and medication can offer relief."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatment can help, but this condition can't be cured",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "Chronic: can last for years or be lifelong",
+    "img": "psoriasis.jpg"
+  },
+  "Impetigo": {
+    "description": [
+      "A highly contagious skin infection that causes red sores on the face.",
+      "Impetigo mainly affects infants and children.",
+      "The main symptom is red sores that form around the nose and mouth. The sores rupture, ooze for a few days, then form a yellow-brown crust.",
+      "Antibiotics shorten the infection and can help prevent spread to others."
+    ],
+    "common": "Very common",
+    "cases": "More than 10 million cases per year (India)",
+    "treatable": "Treatable by a medical professional",
+    "diagnosis": "Requires a medical diagnosis",
+    "labTest": "Lab tests or imaging rarely required",
+    "duration": "Short-term: resolves within days to weeks",
+    "img": "impetigo.jpg"
+  }
+}

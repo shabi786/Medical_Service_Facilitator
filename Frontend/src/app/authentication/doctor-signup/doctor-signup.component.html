@@ -1,0 +1,88 @@
+<div>
+  <form (submit)="onSubmit($event)">
+    <div class="p-fluid">
+      <div class="p-float-label p-mt-2">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="email"
+          pInputText
+          required
+        />
+        <label for="email">Email</label>
+      </div>
+      <div class="p-float-label p-mt-4">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          pInputText
+          required
+        />
+        <label for="password">Password</label>
+      </div>
+      <div class="p-mt-3">
+        <div class="p-inputgroup">
+          <input
+            type="text"
+            class="form-control"
+            name="hospitalToSearch"
+            id="Hospital"
+            placeholder="Hospital"
+            [(ngModel)]="hospitalToSearch"
+            pInputText
+          />
+          <button
+            type="button"
+            pButton
+            pRipple
+            label="Search"
+            (click)="searchHospital(hospitalToSearch)"
+          ></button>
+        </div>
+      </div>
+      <div *ngIf="hospitals.length" class="p-mt-2">
+        <p-dropdown
+          [options]="hospitals"
+          [(ngModel)]="hospital"
+          optionLabel="name"
+          optionValue="id"
+          name="hospital"
+        ></p-dropdown>
+      </div>
+      <div class="p-float-label p-my-5">
+        <input
+          type="text"
+          pInputText
+          name="name"
+          id="name"
+          required
+          [(ngModel)]="name"
+        />
+        <label for="name">Name</label>
+      </div>
+
+      <div class="p-float-label">
+        <input
+          type="number"
+          pInputText
+          name="mobile"
+          id="tel"
+          required
+          [(ngModel)]="mobileNo"
+        />
+        <label for="tel">Mobile no</label>
+      </div>
+    </div>
+    <div class="p-mt-2">
+      <button
+        type="submit"
+        pButton
+        label="Sign Up"
+        [disabled]="!email || !password || !name || !hospital || mobileNo <= 0"
+      ></button>
+    </div>
+  </form>
+</div>

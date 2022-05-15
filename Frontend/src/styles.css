@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeflex/primeflex.min.css";
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #20262E;
+  color: whitesmoke;
+}
+a.p-button {
+  text-decoration: none;
+}

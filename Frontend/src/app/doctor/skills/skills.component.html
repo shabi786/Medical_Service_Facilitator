@@ -1,0 +1,24 @@
+<div class="mt-10">
+  <ng-multiselect-dropdown
+    placeholder="Skills (Can Treat)"
+    [data]="diseases"
+    [(ngModel)]="skills"
+    [settings]="dropdownSettings"
+  >
+  </ng-multiselect-dropdown>
+  <button
+    class="btn btn-primary btn-block mt-10"
+    *ngIf="skills.length > 0"
+    (click)="updateSkills()"
+  >
+    Update
+  </button>
+  <div>
+    <h5>You Skills:</h5>
+    <ul>
+      <li *ngFor="let skill of skills">
+        {{ skill }}
+      </li>
+    </ul>
+  </div>
+</div>
