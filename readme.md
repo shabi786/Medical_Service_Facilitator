@@ -1,4 +1,4 @@
-# Medical Service Facillitator [WIP]
+# Medical Service Facilitator [WIP]
 
 ## Abstract
 
